@@ -6,6 +6,8 @@ import ContextProvider from './context/ContextProvider';
 import reportWebVitals from './misc/reportWebVitals';
 import * as serviceWorker from './misc/serviceWorker';
 
+// maybe organize the providers into a separate file
+
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
 
