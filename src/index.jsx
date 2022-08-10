@@ -11,10 +11,19 @@ import * as serviceWorker from './misc/serviceWorker';
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
 
+const customTheme = {
+  ...theme,
+  config: {
+    ...theme.config,
+    initialColorMode: 'dark',
+    useSystemColorMode: false,
+  },
+};
+
 root.render(
   <StrictMode>
     <ContextProvider>
-      <ChakraProvider resetCSS theme={theme}>
+      <ChakraProvider resetCSS theme={ customTheme }>
         <ColorModeScript />
         <App />
       </ChakraProvider>

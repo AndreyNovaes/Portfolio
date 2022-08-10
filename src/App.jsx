@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import React from 'react';
 import NavBar from './components/Nav';
 
@@ -6,7 +6,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<NavBar />} />
+        <Route path="/" element={ <Navigate to="/home" replace /> }/>
+        <Route path="home" element={ <NavBar /> }/>
       </Routes>
     </BrowserRouter>
   );
