@@ -13,6 +13,7 @@ import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { AiFillGithub, AiFillLinkedin, AiOutlineWhatsApp } from "react-icons/ai";
 
 // needs a refinement in styles and methods of implementation
+// must have beetter organization and separation of concerns
 
 export default function Nav() {
   const githubIcon = <Icon as={AiFillGithub} size="20px" />;
