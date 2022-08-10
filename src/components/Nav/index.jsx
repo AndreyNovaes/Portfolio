@@ -12,6 +12,8 @@ import NavLink from './NavLink';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { AiFillGithub, AiFillLinkedin, AiOutlineWhatsApp } from "react-icons/ai";
 
+// needs a refinement in styles and methods of implementation
+
 export default function Nav() {
   const githubIcon = <Icon as={AiFillGithub} size="20px" />;
   const linkedinIcon = <Icon as={AiFillLinkedin} size="20px" />;
